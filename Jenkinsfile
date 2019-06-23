@@ -1,6 +1,6 @@
 #!/bin/usr/env groovy
 pipeline {
-  agent window_node
+  agent any
   stages {
     stage('buid'){
       steps {
