@@ -8,7 +8,7 @@ pipeline {
     stage('buid'){
       steps {
         bat 'mvn clean install package'
-        bat 'docker build . -t tomcatwebapp:${env.BUILD_ID}'
+        bat 'docker build --tag newtom:1.0 .'
       }
       post {
         success {
